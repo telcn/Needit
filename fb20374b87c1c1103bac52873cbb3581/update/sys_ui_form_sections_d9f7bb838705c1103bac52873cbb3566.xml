@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="d9f7bb838705c1103bac52873cbb3566" sys_domain="global" table="x_705716_trackerfl_trackerflow" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-19 14:30:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d5f7bb838705c1103bac52873cbb3569</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_705716_trackerfl_trackerflow" name="x_705716_trackerfl_trackerflow" sys_domain="global" view="Default view">d9f7bb838705c1103bac52873cbb3566</sys_ui_form>
+            <sys_ui_section caption="Details" display_value="Details" name="x_705716_trackerfl_trackerflow" sys_domain="global" view="Default view">c895bb038705c1103bac52873cbb35e9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-19 14:30:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-19 14:30:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d1f7bb838705c1103bac52873cbb356a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_705716_trackerfl_trackerflow" name="x_705716_trackerfl_trackerflow" sys_domain="global" view="Default view">d9f7bb838705c1103bac52873cbb3566</sys_ui_form>
+            <sys_ui_section caption="Additional Data" display_value="Additional Data" name="x_705716_trackerfl_trackerflow" sys_domain="global" view="Default view">95f7bb838705c1103bac52873cbb3564</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-19 14:30:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-19 14:30:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d5f7bb838705c1103bac52873cbb356d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_705716_trackerfl_trackerflow" name="x_705716_trackerfl_trackerflow" sys_domain="global" view="Default view">d9f7bb838705c1103bac52873cbb3566</sys_ui_form>
+            <sys_ui_section caption="Log" display_value="Log" name="x_705716_trackerfl_trackerflow" sys_domain="global" view="Default view">51f7bb838705c1103bac52873cbb3565</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-19 14:30:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-19 14:30:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9df7bb838705c1103bac52873cbb3570</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_705716_trackerfl_trackerflow" name="x_705716_trackerfl_trackerflow" sys_domain="global" view="Default view">d9f7bb838705c1103bac52873cbb3566</sys_ui_form>
+            <sys_ui_section caption="Statistics" display_value="Statistics" name="x_705716_trackerfl_trackerflow" sys_domain="global" view="Default view">d9f7bb838705c1103bac52873cbb3565</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-19 14:30:59</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_705716_trackerfl_trackerflow</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-19 14:30:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d9f7bb838705c1103bac52873cbb3566</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_705716_trackerfl_trackerflow</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="TrackerFlow" source="x_705716_trackerfl">fb20374b87c1c1103bac52873cbb3581</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="TrackerFlow">fb20374b87c1c1103bac52873cbb3581</sys_scope>
+            <sys_update_name>sys_ui_form_sections_d9f7bb838705c1103bac52873cbb3566</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-19 14:30:59</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
