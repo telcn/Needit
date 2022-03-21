@@ -31,6 +31,7 @@ Uses:
 3. Make a field mandatory
 4. Write a message on a form or a field
 5. Add/Remove fields to a choice list
+6. 
 
 eg. 
 alert(g_form.getValue('short_description'));
@@ -151,3 +152,44 @@ Steps: Go to UI policy -> New -> Select table -> Add condition- if _what is_ fie
 
 UI Policy 2: Script
 Go to advanced view related list -> In if true script -> g_form.showFieldMsg('u_other','Briefly explain what you need.','info');
+
+
+## Server side scripting
+1. Business rules
+2. Script includes: classless, class, extend glideajax
+3. API: glidesystem, gliderecord, glidedatetime
+
+
+Uses:
+1. update field values based on data received by querying db
+2. determine if user has specific role
+3. send email, generate and respond to events
+4. date time
+5. initiate integration and API calls
+6. REST messages: send and retrieve results
+<br>
+#### Business rules
+Business Rules are server-side logic that execute when database records are queried, updated, inserted, or deleted. 
+BR executes: before, after, async, display
+The current object's properties are all the fields for a record and all the GlideRecord methods.
+The previous object's properties are also all fields from a record and the GlideRecord methods
+
+Before BR: execute their logic before a database operation occurs. 
+After BR: execute their logic just after a db opertaion and before the form is rendered to the user
+Async BR: execute their logic on a different thread. Eg. Rest msgs
+Disply BR: execute their logic when a form loads and a record is loaded from the database. The purpose is to populate the g_scratchpad object. 
+This object is used to pass data to client side from the server side.
+
+Business Rules often use the current and previous objects in their script logic.
+The current object's properties are all the fields for a record and all the GlideRecord methods.
+The previous object's properties are also all fields from a record and the GlideRecord methods. The property values are the values for the record fields when they were loaded from the database and before any changes were made.
+
+Dot walking: 
+Eg: current.u_requested_for.company.latitude
+Here, the u_requested_for contains the sys_id of a record in u_requested_for table & by dot-waling, we can access the field values of that table
+
+## server side api:
+
+1. GlideSystem
+
+
