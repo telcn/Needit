@@ -4,37 +4,39 @@
         <application display_value="TrackerFlow">c933ff8f87c1c1103bac52873cbb356c</application>
         <assessment/>
         <device_type/>
-        <filter/>
-        <hint/>
+        <filter table="x_705716_trackerfl_trackerflow">u_requested_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="u_requested_for" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint>A list of my TrackerFlow Requests</hint>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>TrackerFlows</mobile_title>
+        <mobile_title>My NeedIt Requests</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_705716_trackerfl_trackerflow</name>
-        <order/>
+        <order>150</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_705716_trackerfl.admin</roles>
+        <roles>x_705716_trackerfl.trackerflow_user</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-01-19 14:10:12</sys_created_on>
+        <sys_created_on>2022-03-22 17:34:16</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>4133ff8f87c1c1103bac52873cbb3570</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>All</sys_name>
+        <sys_id>e483f30787d641103bac52873cbb35c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My TrackerFlow Requests</sys_name>
         <sys_overrides/>
         <sys_package display_value="TrackerFlow" source="x_705716_trackerfl">fb20374b87c1c1103bac52873cbb3581</sys_package>
         <sys_policy/>
         <sys_scope display_value="TrackerFlow">fb20374b87c1c1103bac52873cbb3581</sys_scope>
-        <sys_update_name>sys_app_module_4133ff8f87c1c1103bac52873cbb3570</sys_update_name>
+        <sys_update_name>sys_app_module_e483f30787d641103bac52873cbb35c3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-22 17:29:39</sys_updated_on>
+        <sys_updated_on>2022-03-22 17:34:16</sys_updated_on>
         <timeline_page/>
-        <title>All</title>
+        <title>My TrackerFlow Requests</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
