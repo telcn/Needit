@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_705716_trackerfl.GetEmailAddress</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>On demand Script Include to validate email address syntax using regular expressions.&#13;
+</description>
+        <name>GetEmailAddress</name>
+        <script><![CDATA[function GetEmailAddress(emailStr){
+    // Use JavaScript coercion to guarantee emailStr is a string
+    emailStr = emailStr + '';
+    // Compare emailStr against the allowed syntax as specified in the regular expression
+    // If emailStr has allowed syntax, return true, else return false
+    if(emailStr.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+      return true;
+    }
+    else {
+     return false;
+    }
+  }]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-22 15:10:10</sys_created_on>
+        <sys_id>60f297c3879641103bac52873cbb3512</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>GetEmailAddress</sys_name>
+        <sys_package display_value="TrackerFlow" source="x_705716_trackerfl">fb20374b87c1c1103bac52873cbb3581</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="TrackerFlow">fb20374b87c1c1103bac52873cbb3581</sys_scope>
+        <sys_update_name>sys_script_include_60f297c3879641103bac52873cbb3512</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-22 15:48:30</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="TrackerFlow">fb20374b87c1c1103bac52873cbb3581</application>
+        <file_path/>
+        <instance_id>10db4c5ddbfa701052cec59705961912</instance_id>
+        <instance_name>dev120084</instance_name>
+        <name>sys_script_include_60f297c3879641103bac52873cbb3512</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_705716_trackerfl.GetEmailAddress&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;On demand Script Include to validate email address syntax using regular expressions.&amp;#13;
+&lt;/description&gt;&lt;name&gt;GetEmailAddress&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function GetEmailAddress(emailStr){
+    // Use JavaScript coercion to guarantee emailStr is a string
+    emailStr = emailStr + '';
+    // Compare emailStr against the allowed syntax as specified in the regular expression
+    // If emailStr has allowed syntax, return true, else return false
+    if(emailStr.match(/^(([^&lt;&gt;()\[\]\\.,;:\s@"]+(\.[^&lt;&gt;()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+      return true;
+    }
+    else {
+     return false;
+    }
+  }]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-22 15:10:10&lt;/sys_created_on&gt;&lt;sys_id&gt;60f297c3879641103bac52873cbb3512&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetEmailAddress&lt;/sys_name&gt;&lt;sys_package display_value="TrackerFlow" source="x_705716_trackerfl"&gt;fb20374b87c1c1103bac52873cbb3581&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="TrackerFlow"&gt;fb20374b87c1c1103bac52873cbb3581&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_60f297c3879641103bac52873cbb3512&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-22 15:48:30&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1080576059</payload_hash>
+        <record_name>GetEmailAddress</record_name>
+        <reverted_from/>
+        <source>d750330f87c1c1103bac52873cbb35c5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-22 15:48:30</sys_created_on>
+        <sys_id>6d4c1707879641103bac52873cbb35fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fb250be130000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-22 15:48:30</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>a54c1707719641108df87f7fc15652fc</update_guid>
+        <update_guid_history>a54c1707719641108df87f7fc15652fc:1080576059,16b893c7ec964110d5d1d79ad3565c4b:-957318973,8083dbc34496411072f45abe49bc40ec:-1853297085</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-22 15:50:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>cf063ec9712047aaa0a587746ead73e1</sys_id>
+        <sys_metadata>60f297c3879641103bac52873cbb3512</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetEmailAddress</sys_name>
+        <sys_package display_value="TrackerFlow" source="x_705716_trackerfl">fb20374b87c1c1103bac52873cbb3581</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="TrackerFlow">fb20374b87c1c1103bac52873cbb3581</sys_scope>
+        <sys_scope_delete display_value="">1b31fb9b61664d4f9a38bd825156c539</sys_scope_delete>
+        <sys_update_name>sys_script_include_60f297c3879641103bac52873cbb3512</sys_update_name>
+        <sys_update_version display_value="sys_script_include_60f297c3879641103bac52873cbb3512">6d4c1707879641103bac52873cbb35fc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-22 15:50:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
