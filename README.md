@@ -99,6 +99,97 @@ Get a ServiceNow personal developer instance [here](https://developer.servicenow
 
 
 
+## Usage
+
+**Table Name**: x_705716_trackerfl_trackerflow </br>
+**Config**: x_705716_trackerfl_trackerflow.CONFIG </br>
+**List**: x_705716_trackerfl_trackerflow.LIST</br>
+**Users**: Beth Anglin and Zane Sulikowski</br>
+**Admin**:  Fred Luddy and Alissa Mountjoy </br>
+</br>
+
+**Client Scripts: **
+
+There are two main client scripts:
+1. Name: **TrackerFlow Request Type Options**
+Used: g_form.getValue(), g_form.clearOptions(), g_form.setValue(), g_form.isNewRecord()
+Description: Change the "What needed" field based on  "Request type" field. Eg: If what needed is Legal, then change the Request type choices as Legal
+2. Name: **TrackerFlow Set Requested for**
+Used:  g_form.setValue(), g_form.isNewRecord()
+Description: Set the Requested for to the currently logged in user for new records. Users can change the field value
+
+
+
+**Business Rules:**
+1. Name: **NeedIt When needed field date**
+Used: Before Insert, Created an object of GlideDateTime() class to get current date, Created an object of GlideDateTime(current.u_when_needed) to
+get the time object as per populated in the field, gs.addErrorMessage(), before() to compare dates, current.setAbortAction(true) to abort the BR
+Description: if "when needed" is before today's date, then abort the BR.  
+
+Debugging BR i.e server side:
+1. System Logs:
+gs.info(), gs.warn(), gs.error(), gs.debug() 
+See the log msgs in System Logs > System Log > Application Logs
+
+2. Tracing:
+System Diagnostics > Script Tracer
+The Script Tracer begins tracing when a UI Action, such as the Save or Update button is clicked, or some other transaction occurs.
+
+3. JS Debugger:
+System Diagnostics > Script Debugger
+The JavaScript Debugger is the primary strategy for debugging Business Rules and other synchronous server-side scripts.
+
+</br>
+
+**Script Includes**
+</br>
+1. Name:  **validateEmailAddress**
+Used: string.match() function to match 2 strings
+Description: On demand Script Include to validate email address syntax using regular expressions.
+Name of the Business Rule used to call the script include: Email Address Syntax Validate
+Used: validateEmailAddress(current.u_requested_for_email) to call the script include, gs.addErrorMessage()
+
+</br>
+2. Script include for extending a class 
+Although most ServiceNow classes are extensible, the most commonly extended classes are: GlideAjax, LDAPUtils & Catalog
+Eg. Extending the Glide Ajax class using script include
+Name of the script include:  **GetEmailAddress**
+Used: GlideRecord("sys_user"), userRecord.get(this.getParameter('sysparm_userID'))</br>
+Description: The GlideAjax class is used by client-side scripts to send data to and receive data from the ServiceNow server. The client-side script passes parameters to the Script Include. The Script Include returns data as XML or a JSON object. The client-side script parses data from the response and can use the data in subsequent script logic.</br>
+Requested for is a referenced field i.e a record from the users table. In the form, we want to populate the email field (on clie</br>nt side) using info
+from the users table (email field). This data transfer from server to client side is done by using the glide ajax class. 
+The script include is client callable. We call the script include on the client side to get email of the user from the server side to client side.
+
+Name of Client Script used to call the GetEmailAddress script include: TrackerFlow Populate Email Field
+Used: Created an object of GlideAjax('GetEmailAddress'), getEmailAddr.addParam('sysparm_name','getEmail'),  getEmailAddr.getXML() to send 
+request to the server
+
+3. Utilities script include</br>
+Most applications store util functions in a utilities script include. Call them on server side. The SI is a class with different methods.
+To use them, create an object of the SI class in the server script and call the required method.
+Name of SI: **TrackerFlowUtils**</br>
+
+
+Other Server side scripts:</br>
+Script Action: respond to events</br>
+Scheduled Script Execution: Run a report and email it</br>
+UI Actions: Adding buttons</br>
+Notification Email Script</br>
+Scripted REST APIs: Request sent or received through web services</br>
+UI Page Processing Script: Script that is executed once UI page is submitted</br>
+Transform Map Script: Data import</br>
+</br>
+
+**Flow designer**
+
+Name: **TrackerFlow Fulfillment** </br>
+Description: Steps to approve and fulfill Trackerflow requests. Trigger is record created. </br>
+Action 1: Update the state field to Approval awaiting and the assigned to field to Beth anglin.</br>
+Action 2: Ask for approval. Manager: Fred Luddy. Employee: Adela Cervantsz.</br>
+
+
+
+
 
 
 <!-- ROADMAP -->
